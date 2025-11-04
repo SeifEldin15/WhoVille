@@ -1186,10 +1186,10 @@
               <a href="tel:559-907-7617" class="mr-6 text-14 font-medium mdd:hidden">559-907-7617</a>
               <ul class="p-button-group m-0 gap-4 md:flex md:items-center">
                 <li class="mdd:my-4 ">
-                  <a href="#contact-us" class="btn btn--small btn--gold btn--base"> Schedule Online </a>
+                  <a href="https://calendly.com/thechristmaslightrentalco/inquiry" class="btn btn--small btn--gold btn--base"> Schedule Online </a>
                 </li>
               </ul>
-              <a href="#contact-us" class="btn btn--small btn--secondary ml-6"> Schedule Online </a>
+              <a href="https://calendly.com/thechristmaslightrentalco/inquiry" class="btn btn--small btn--secondary ml-6"> Schedule Online </a>
             </div>
           </div>
         </header>
@@ -1209,7 +1209,7 @@
                         <div class="mt-8 md:mt-10 tablet:flex tablet:justify-center">
                           <ul class="p-button-group m-0 gap-4 md:flex md:items-center">
                             <li class="mdd:my-4 text-center">
-                              <a href="#contact-us" class="btn btn--normal btn--gold btn--base !text-white"> Schedule Online </a>
+                              <a href="https://calendly.com/thechristmaslightrentalco/inquiry" class="btn btn--normal btn--gold btn--base !text-white"> Schedule Online </a>
                             </li>
                           </ul>
                         </div>
@@ -1706,7 +1706,7 @@
                 <div class="flex mdd:justify-center">
                   <ul class="p-button-group m-0 gap-4 md:flex md:items-center">
                     <li class="mdd:my-4 text-center">
-                      <a href="#contact-us" class="btn btn--normal btn--secondary"> Schedule Online </a>
+                      <a href="https://calendly.com/thechristmaslightrentalco/inquiry" class="btn btn--normal btn--secondary"> Schedule Online </a>
                     </li>
                   </ul>
                 </div>
@@ -2341,8 +2341,13 @@
             const data = await response.json();
             
             if (data.success) {
-              // Redirect to Calendly
-              window.location.href = 'https://calendly.com/thechristmaslightrentalco/inquiry';
+              // Hide form and show success message
+              form.style.display = 'none';
+              formDone.style.display = 'block';
+              formFail.style.display = 'none';
+              
+              // Reset form
+              form.reset();
             } else {
               throw new Error(data.message || 'Failed to submit');
             }
