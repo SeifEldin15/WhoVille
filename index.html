@@ -94,6 +94,23 @@
         transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease !important;
       }
       
+      /* Get My Personalized Quote button styling */
+      input[type="submit"].uui-button,
+      input[type="submit"].w-button {
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease !important;
+        box-shadow: 0 2px 8px rgba(240, 69, 69, 0.3) !important;
+        color: #ffffff !important;
+      }
+      
+      input[type="submit"].uui-button:hover,
+      input[type="submit"].w-button:hover {
+        background-color: #54BD81 !important;
+        border-color: #54BD81 !important;
+        box-shadow: 0 0 20px rgba(84, 189, 129, 0.5), 0 0 40px rgba(84, 189, 129, 0.3) !important;
+        transform: translateY(-2px) !important;
+        color: #ffffff !important;
+      }
+      
       /* Navbar styling - White background with shadow */
       #header {
         background-color: #ffffff !important;
@@ -1688,7 +1705,7 @@
                         </div>
                       </div>
                       <div class="flex justify-center mt-6">
-                        <input type="submit" data-wait="Please wait..." class="uui-button is-button-large w-button" style="background-color: #F04545; border-color: #F04545;" value="Get My Personalized Quote" />
+                        <input type="submit" data-wait="Please wait..." class="uui-button is-button-large w-button" style="background-color: #F04545; border-color: #F04545; color: #ffffff; border-radius: 50px; padding: 14px 32px; font-weight: 600; cursor: pointer;" value="Get My Personalized Quote" />
                       </div>
                     </form>
                     <div class="w-form-done">
