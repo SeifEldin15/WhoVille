@@ -82,6 +82,18 @@
         color: #ffffff !important;
       }
       
+      /* Footer call button base and hover effect */
+      .footer-tel a[href^="tel:"] {
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease !important;
+      }
+      
+      .footer-tel a[href^="tel:"]:hover {
+        background-color: #54BD81 !important;
+        box-shadow: 0 0 20px rgba(84, 189, 129, 0.5), 0 0 40px rgba(84, 189, 129, 0.3) !important;
+        transform: translateY(-2px) !important;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease !important;
+      }
+      
       /* Navbar styling - White background with shadow */
       #header {
         background-color: #ffffff !important;
@@ -1704,7 +1716,7 @@
             <div class="md:flex md:mb-24">
               <div class="cm">
                 <p class="footer-tel mdd:flex mdd:justify-center mdd:gap-2">
-                  <a href="tel:559-907-7617" class="font-medium" style="background-color: #23384E; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-block; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">Call (559) 907-7617</a>
+                  <a href="tel:559-907-7617" class="font-medium" style="background-color: #F04545; color: #ffffff !important; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-block; font-weight: 600; transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 2px 8px rgba(240, 69, 69, 0.3);">Call (559) 907-7617</a>
                 </p>
               </div>
               <div class="md:flex md:items-center md:gap-6 mdd:mt-6 md:flex-1 md:justify-end">
